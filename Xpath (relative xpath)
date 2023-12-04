@@ -1,0 +1,7 @@
+ Team content = //button[@id='com.ibm.bi.contentApps.teamFoldersSlideout']
+ SCI Platform = //div[@id = 'com.ibm.bi.contentApps.teamFoldersSlideout.bi/content_apps/LegacyCATeamFoldersView.global']
+ SCI REPORT AF = //div[@title= 'SCI Reports AF']
+ MA            = //div[@title= 'MA']
+ MA1           = //div[@title= 'MA1']
+ LMA_NEW       = //div[@title= 'LMA New']
+RECEPTION MANAGEMENT RAPPORT- MOIS = //div[@title= 'Réception Management Rapport - Mois']
