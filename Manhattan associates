@@ -1,0 +1,23 @@
+
+LOGIN PAGE : 
+USERNAME : //input[@id='textfield-1019-inputEl']
+PASSWORD : //input[@id='textfield-1020-inputEl']
+BUTTON   : //span[@id='button-1021-btnEl']
+SEND AWAY : //button[@id='proceed-button']
+
+
+HOME PAGE:
+WAREHOUSE      : //div[@id='combobox-1058-trigger-picker']
+WAREHOUSE[MA1] : //ul[@id='boundlist-1059-listEl']/li[3]
+BUSINESS UNIT  : //div[@id='combobox-1060-trigger-picker']
+BUSINESS[MA1]  : //ul[@id='boundlist-1061-listEl']/li[15]
+APPLY BUTTON   : //span[@id='button-1064-btnInnerEl']
+
+MENU PAGE    :
+MENU BUTTON  : //div[@class = 'x-window x-layer x-window-default x-closable x-window-closable x-window-default-closable x-border-box']
+MENU  SEARCH : //input[@id='mps_menusearch-1087-inputEl'] <-----> //ul[@id='boundlist-1088-listEl']/li[3]  <----->
+
+ASNs:
+PRIMARY FIELDS : //input[@id='combobox-2373-inputEl']
+LPN            : //input[@id='mpslookupfield-2418-inputEl']
+APPLY BUTTON   : //span[@id='button-2333-btnWrap']
