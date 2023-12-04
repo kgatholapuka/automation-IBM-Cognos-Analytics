@@ -1,3 +1,9 @@
+lOGIN PAGE:
+USERSNAME =  //input[@id='CAMUsername']
+PASSWORD  = //input[@id='CAMPassword']
+SIGN IN   = //button[@class='signInBtn']
+
+
  Team content = //button[@id='com.ibm.bi.contentApps.teamFoldersSlideout']
  SCI Platform = //div[@id = 'com.ibm.bi.contentApps.teamFoldersSlideout.bi/content_apps/LegacyCATeamFoldersView.global']
  SCI REPORT AF = //div[@title= 'SCI Reports AF']
