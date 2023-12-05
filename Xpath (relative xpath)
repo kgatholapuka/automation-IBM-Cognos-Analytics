@@ -13,3 +13,8 @@ SIGN IN   = //button[@class='signInBtn']
  MA1           = //div[@title= 'MA1']
  LMA_NEW       = //div[@title= 'LMA New']
 RECEPTION MANAGEMENT RAPPORT- MOIS = //div[@title= 'Réception Management Rapport - Mois']
+
+
+
+
+
