@@ -1,0 +1,46 @@
+import pandas as pd
+
+# Read in the two Excel files
+
+file1 = pd.read_excel('file1.xlsx')file2 = pd.read_excel('file2.xlsx')
+
+# Merge the two files using the concat() method
+merged_file = pd.concat([file1, file2], ignore_index=True)
+
+# Write the merged file to a new Excel file
+merged_file.to_excel('merged_file.xlsx', index=False)
+
+import pandas as pd
+import numpy as np
+
+# Calculate summary statistics
+df.describe()
+# Create custom reports
+df.pivot_table(values='column_name', index='category_name', columns='date')
+
+import pandas as pd
+# Create daily report
+df_daily = df[df['date'] == '2022-01-01']
+df_daily.to_excel('daily_report.xlsx', index=False)
+# Create weekly report
+df_weekly = df.groupby('category').sum()
+df_weekly.to_excel('weekly_report.xlsx', index=False)
+
+import win32com.client as win32
+# Open Excel file
+excel = win32.gencache.EnsureDispatch('Excel.Application')
+workbook = excel.Workbooks.Open(r'filename.xlsx')
+# Run macro
+excel.Application.Run('macro_name')
+# Save and close Excel
+ fileworkbook.Save()workbook.Close()excel.Quit()
+
+import pandas as pd
+import pyodbc
+# Connect to database
+cnxn = pyodbc.connect('DRIVER={SQL Server};SERVER=server_name;DATABASE=db_name;UID=user_id;PWD=password')
+# Read data from database
+query = 'SELECT * FROM table_name'
+df = pd.read_sql(query, cnxn)
+# Export to Excel file
+df.to_excel('database_data.xlsx', index=False)
