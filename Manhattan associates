@@ -21,3 +21,25 @@ ASNs:
 PRIMARY FIELDS : //input[@id='combobox-2373-inputEl']
 LPN            : //input[@id='mpslookupfield-2418-inputEl']
 APPLY BUTTON   : //span[@id='button-2333-btnWrap']
+
+
+
+
+driver = webdriver.Edge()
+driver.get('http://square2016-af.bollore-logistics.com:12000/manh/index.html?i=82')
+driver.implicitly_wait(60)
+driver.maximize_window()
+driver.find_element('xpath',"//input[@id='textfield-1019-inputEl']").send_keys('KPuka')
+driver.find_element('xpath',"//input[@id='textfield-1020-inputEl']").send_keys('Puka123')
+driver.find_element('xpath',"//span[@id='button-1022-btnWrap']").click()
+WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "//button[@id='proceed-button']"))).click()
+
+
+## Home page
+driver.implicitly_wait(60)
+driver.find_element('xpath',"//div[@id='combobox-1058-trigger-picker']").click()
+driver.find_element('xpath',"//ul[@id='boundlist-1059-listEl']/li[3]").click()
+driver.find_element('xpath',"//div[@id='combobox-1060-trigger-picker']").click()
+driver.find_element('xpath',"//ul[@id='boundlist-1061-listEl']/li[15]").click()
+driver.find_element('xpath',"//span[@id='button-1064-btnInnerEl']").click()
+
