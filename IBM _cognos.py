@@ -1,5 +1,4 @@
 import time
-import pytest
 import selenium
 from selenium import webdriver
 from selenium import webdriver
@@ -18,7 +17,7 @@ driver.find_element("xpath","//input[@id='CAMUsername']").send_keys('SCI_AF')
 driver.find_element("xpath","//input[@id='CAMPassword']").send_keys('SCI_AF')
 driver.find_element("xpath","//button[@class='signInBtn']").click()
 driver.implicitly_wait(25)
-time.sleep(15)
+time.sleep(6)
 driver.find_element("xpath",'//*[@id="com.ibm.bi.contentApps.teamFoldersSlideout"]/div/div').click()
 driver.implicitly_wait(5)
 driver.find_element("xpath", "//div[@title='SCI Platform']").click()
@@ -36,5 +35,7 @@ driver.find_element("xpath",'//*[@id="com.ibm.bi.contentApps.teamFoldersSlideout
 #sort By close the window
 driver.find_element("xpath",'//button[@title = "Sort"]').click() 
 driver.implicitly_wait(20)
-driver.find_element("xpath", '//tr[@data-name= "Réception Management Rapport - Mois"]').click()
+#driver.find_element("xpath", '//tr[@data-name= "Réception Management Rapport - Mois"]').click()
+action = ActionChains(driver)
+action.double_click(driver.find_element("xpath", '//tr[@data-name= "Réception Management Rapport - Mois"]')).perform()
 time.sleep(30)
