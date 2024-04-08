@@ -41,5 +41,3 @@ def uncommon_values(set1,set2):
         output.write(str(temp1))
     print(f"The ASNs that have not been retriggered :"+ str(temp1))
 uncommon_values(df,dff)
-
-time.sleep(100)
